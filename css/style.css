@@ -416,12 +416,14 @@ hr {
 	padding:0;
 }
 .team-social .social-facebook a{background: #3873ae;}
+.team-social .social-teamapp a{background: #0F6011;}
 .team-social .social-twitter a{background: #62c6f8;}
 .team-social .social-dribble a{background: #d74980;}
 .team-social .social-deviantart a{background: #8da356;}
 .team-social .social-google a{background: #000;}
 .team-social .social-vimeo a{background: #51a6d3;}
 .team-social .social-facebook a:hover{background: #4893ce;}
+.team-social .social-teamapp a:hover{background: #8BB800;}
 .team-social .social-twitter a:hover{background: #82e6ff;}
 .team-social .social-dribble a:hover{background: #f769a0;}
 .team-social .social-deviantart a:hover{background: #adc376;}
@@ -569,6 +571,7 @@ footer p {
 
 .credits, .credits a {
     color: #fff;
+    font-size: 8px;
 }
 
 /* ==========================
@@ -764,9 +767,23 @@ Parallax
     display:inline;
     margin-left: 5px;
 }
+#logo_text_mobile {
+    display: none;
+}
+
 
 /* Media queries */
+@media(max-width:1024px) {
 
+    #logo_text {
+        display: inline;
+    }
+
+    #logo_text_mobile {
+        display: none;
+    }
+
+}
 @media(min-width:767px) {
 
     .navbar {
@@ -796,16 +813,26 @@ Parallax
     .brand-heading {
         font-size: 100px;
     }
-	
 
     .intro-text {
         font-size: 25px;
     }
 
+    #logo_text {
+        display: none;
+    }
+
+    #logo_text_mobile {
+        display: inline;
+    }
 
 }
 @media (max-width:768px) {
-	
+
+    .intro .slogan h2 {
+        font-size: 48px;
+    }
+
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
@@ -813,11 +840,13 @@ Parallax
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
-
-	
 }
 
 @media (max-width:480px) {
+
+    .intro .slogan h2 {
+        font-size: 32px;
+    }
 
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
@@ -840,5 +869,13 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
-	
+
+    #logo_text {
+        display: none;
+    }
+
+    #logo_text_mobile {
+        display: inline;
+    }
+
 }
