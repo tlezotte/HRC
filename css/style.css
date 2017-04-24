@@ -773,17 +773,6 @@ Parallax
 
 
 /* Media queries */
-@media(max-width:1024px) {
-
-    #logo_text {
-        display: inline;
-    }
-
-    #logo_text_mobile {
-        display: none;
-    }
-
-}
 @media(min-width:767px) {
 
     .navbar {
@@ -818,13 +807,6 @@ Parallax
         font-size: 25px;
     }
 
-    #logo_text {
-        display: none;
-    }
-
-    #logo_text_mobile {
-        display: inline;
-    }
 
 }
 @media (max-width:768px) {
