@@ -757,6 +757,12 @@ Parallax
 
 #logo {
     float: left;
+    vertical-align:middle;
+}
+#logo_text {
+    vertical-align:middle;
+    display:inline;
+    margin-left: 5px;
 }
 
 /* Media queries */
