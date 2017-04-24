@@ -755,6 +755,9 @@ Parallax
     margin-top: 0;
 }
 
+#logo {
+    float: left;
+}
 
 /* Media queries */
 
