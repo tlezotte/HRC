@@ -35,4 +35,13 @@
 		});
 	});
 
+    // -- modal --
+    function iframeModal() {
+        var title = $(this).attr('data-title');
+        var url = $(this).attr('data-url');
+
+        return eModal
+            .iframe(url, title);
+    }
+
 })(jQuery);

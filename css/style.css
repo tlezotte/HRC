@@ -573,6 +573,10 @@ footer p {
     color: #fff;
     font-size: 8px;
 }
+.copyright {
+    color: #fff;
+    font-size: 12px;
+}
 
 /* ==========================
 Parallax
@@ -815,6 +819,10 @@ Parallax
         font-size: 48px;
     }
 
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
@@ -827,6 +835,10 @@ Parallax
 @media (max-width:480px) {
 
     .intro .slogan h2 {
+        font-size: 32px;
+    }
+
+    .section-heading h2 {
         font-size: 32px;
     }
 
