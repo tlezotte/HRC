@@ -766,12 +766,12 @@ Parallax
     float: left;
     vertical-align:middle;
 }
-.desktop_view {
+.desktop_item {
     vertical-align:middle;
     display:inline;
     margin-left: 5px;
 }
-.mobile_view {
+.mobile_item {
     display: none;
 }
 
@@ -864,11 +864,11 @@ Parallax
 		font-size: 20px;
 	}
 
-    .desktop_view {
+    .desktop_item {
         display: none;
     }
 
-    .mobile_view {
+    .mobile_item {
         display: inline;
     }
 
