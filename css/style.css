@@ -766,12 +766,12 @@ Parallax
     float: left;
     vertical-align:middle;
 }
-.desktop_item {
+.desktop-item {
     vertical-align:middle;
     display:inline;
     margin-left: 5px;
 }
-.mobile_item {
+.mobile-item {
     display: none;
 }
 
