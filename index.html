@@ -11,13 +11,14 @@
 	<title>HRC</title>
 
 	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	 crossorigin="anonymous">
 
 	<!-- Fonts -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 	 crossorigin="anonymous">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
 	<!-- Squad theme CSS -->
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
@@ -79,7 +80,7 @@
 						<a href="#series">Race Series</a>
 					</li>
 					<li>
-						<a href="#series">Store</a>
+						<a href="#">Store</a>
 					</li>
 					<!-- <li><a href="#weather"><script type='text/javascript' src='//darksky.net/widget/default-small/42.360082,-71.058880/us12/en.js?width=50%&height=40&title=Full Forecast&textColor=333333&bgColor=transparent&transparency=true&skyColor=333333&fontFamily=Default&customFont=&units=us'></script></a></li> -->
 				</ul>
@@ -213,10 +214,12 @@
 								<i class="fa fa-2x fa-angle-down"></i>
 							</div>
 						</div>
-						<div class="wow bounceInUp" data-wow-delay="0.6s">
+						<!-- <div class="wow bounceInUp" data-wow-delay="0.6s">
 							<iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=91vsulqm75d67hannp6idcje3h1ona1v%40import.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
 							 style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no" target="hrc"></iframe>
-						</div>
+						</div> -->
+						<div id="calendar"></div>
+						<div id="calendar2"></div>
 					</div>
 				</div>
 			</div>
@@ -315,7 +318,6 @@
 							<a href="http://thememorialdayclassic.com/" target="hrc">
 								<img src="img/Memorial-Day-Classic.png" width="150" alt="Memorial Day Classic" />
 							</a>
-							<h6>May 28, 2018</h6>
 						</div>
 					</div>
 				</div>
@@ -326,7 +328,6 @@
 							<a href="http://hendersonvillehalf.com/" target="hrc">
 								<img src="img/Hendersonville-Half.png" width="150" alt="Hendersonville Half" />
 							</a>
-							<h6>September 22, 2018</h6>
 						</div>
 					</div>
 				</div>
@@ -337,7 +338,6 @@
 							<a href="http://indianlakeloop.com/" target="hrc">
 								<img src="img/Indian-Lake-Loop.png" width="150" alt="Indian Lake Loop" />
 							</a>
-							<h6>November 22, 2018</h6>
 						</div>
 					</div>
 				</div>
@@ -348,11 +348,40 @@
 							<a href="" target="hrc">
 								<img src="img/Frostbite.png" width="150" alt="Frostbite" />
 							</a>
-							<h6>TBD</h6>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+					<div class="col-md-3">
+						<div class="wow bounceInUp" data-wow-delay="0.6s">
+							<div class="team boxed-grey">
+								<h6>May 28, 2018</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="wow bounceInUp" data-wow-delay="0.6s">
+							<div class="team boxed-grey">
+								<h6>September 22, 2018</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="wow bounceInUp" data-wow-delay="0.6s">
+							<div class="team boxed-grey">
+								<h6>November 22, 2018</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="wow bounceInUp" data-wow-delay="0.6s">
+							<div class="team boxed-grey">
+								<h6>TBD</h6>
+							</div>
+						</div>
+					</div>
+				</div>
 		</div>
 	</section>
 	<!-- /Section: about -->
@@ -418,16 +447,51 @@
 	</footer>
 
 	<!-- Core JavaScript Files -->
-	<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	 crossorigin="anonymous"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/eModal/1.2.65/eModal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/eModal/1.2.65/eModal.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script src="js/custom.js"></script>
 	<!--<script src="contactform/contactform.js"></script>-->
+
+	<script>
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'listDay,listWeek,month'
+			},
+	
+			// customize the button names,
+			// otherwise they'd all just say "list"
+			views: {
+				listDay: { buttonText: 'list day' },
+				listWeek: { buttonText: 'list week' }
+			},
+	
+			defaultView: 'listWeek',
+			defaultDate: '2016-09-12',
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: {
+				url: 'https://hendersonvillerunningclub.teamapp.com/events_subscriptions.ics?id=2694847&secret=BAhJIj1JOGtkL0xoMm02Y3hFeVRkaTJSeFN2MFR6SDhieU83YVd6SlRFcVBzR2NQQkVjbE9Pcm9mVHhUcQY6BkVU--f9064844807da51cfcd797f275adfc12a6a25b48',
+				data: function() { // a function that returns an object
+					d: 'ical'
+				}
+			}
+			
+		});
+		$.get( "https://hendersonvillerunningclub.teamapp.com/events_subscriptions.ics?id=2694847&secret=BAhJIj1JOGtkL0xoMm02Y3hFeVRkaTJSeFN2MFR6SDhieU83YVd6SlRFcVBzR2NQQkVjbE9Pcm9mVHhUcQY6BkVU--f9064844807da51cfcd797f275adfc12a6a25b48", function( data ) {
+			$( "#calendar2" ).html( data );
+			alert( "Load was performed." );
+			});
+	</script>
 </body>
 
 </html>
