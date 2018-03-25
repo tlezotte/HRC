@@ -397,7 +397,7 @@ hr {
   margin: 0;
   padding: 0;
   display: block;
-  width: 40px;
+  /* width: 40px; */
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -549,10 +549,10 @@ form#contact-form textarea:focus {
 }
 
 .company-social a {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   display: block;
-  width: 40px;
+  /* width: 40px; */
   height: 40px;
   line-height: 40px;
   text-align: center;
@@ -563,7 +563,8 @@ form#contact-form textarea:focus {
 }
 .company-social a i {
   text-align: center;
-  margin: 0;
+  /* margin: 0; */
+  
   padding: 0;
 }
 .company-social .social-facebook a {
@@ -913,6 +914,7 @@ Parallax
   display: flex;
   flex-wrap: wrap;
 }
+.social-item,
 .weekly-item,
 .series-item {
   display: flex;
@@ -920,12 +922,16 @@ Parallax
   width: 100%;
 }
 @media all and (min-width: 40em) {
-  .weekly-item,
+  .social-item,
+    .weekly-item,
   .series-item {
     width: 50%;
   }
 }
 @media all and (min-width: 60em) {
+    .social-item {
+        width: 50%;
+      }
   .weekly-item {
     width: 33.3%;
   }
@@ -933,6 +939,12 @@ Parallax
     width: 25%;
   }
 }
+.social-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+  }
 .weekly-content {
   background-color: #f9f9f9;
   display: flex;
@@ -947,6 +959,6 @@ Parallax
   padding: 1em;
   width: 100%;
 }
-.weekly-content, .series-content p {
+.social-item, .weekly-content, .series-content p {
   flex: 1 0 auto;
 }
