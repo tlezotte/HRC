@@ -899,11 +899,11 @@ Parallax
     font-size: 20px;
   }
 
-  .desktop_item {
+  .desktop-item {
     display: none;
   }
 
-  .mobile_item {
+  .mobile-item {
     display: inline;
   }
 }
