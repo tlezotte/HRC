@@ -956,6 +956,7 @@ Parallax
   flex-direction: column;
   padding: 1em;
   width: 100%;
+  border: 1px solid #eaeaea;
 }
 .series-content {
   background-color: #fff;
@@ -963,6 +964,7 @@ Parallax
   flex-direction: column;
   padding: 1em;
   width: 100%;
+  border: 1px solid #eaeaea;
 }
 .social-item,
 .weekly-content,
