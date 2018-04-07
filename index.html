@@ -45,7 +45,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" /> -->
 	<!-- Squad theme CSS -->
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
@@ -96,7 +96,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="#events">All</a>
+								<a href="#events">Local</a>
 							</li>
 							<li>
 								<a href="#weekly">Weekly</a>
@@ -106,9 +106,9 @@
 					<li>
 						<a href="#series">Race Series</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#">Store</a>
-					</li>
+					</li> -->
 					<!-- <li><a href="#weather"><script type='text/javascript' src='//darksky.net/widget/default-small/42.360082,-71.058880/us12/en.js?width=50%&height=40&title=Full Forecast&textColor=333333&bgColor=transparent&transparency=true&skyColor=333333&fontFamily=Default&customFont=&units=us'></script></a></li> -->
 				</ul>
 			</div>
@@ -156,10 +156,6 @@
 					<div class="wow bounceInUp" data-wow-delay="0.6s">
 						<div class="team boxed-grey">
 							<div class="inner wow bounceInUp" data-wow-delay="0.4s">
-								<!-- <script type="text/javascript" src="http://widgets.active.com/widgets/nearyou/widget-a3.min.js"></script>
-								<script type="text/javascript">
-									new ActiveNetwork.NearYouWidget({ "title": "Races Near Us", "num": "5", "keywords": "", "activity": "running", "showActivitySelector": false, "type": "event", "location": "37075", "showLocationSelector": true, "affiliate": "", "placement": "", "campaign": "150457", "width": 294, "height": 383, "style": { "frame": { "background-color": "#f7f6f6" }, "title": { "color": "#ffffff" }, "window": { "background-color": "#f7f6f6" }, "text": { "color": "#5b5c5c", "border-color": "#5b5c5c" }, "links": { "color": "#0068a4" }, "buttons": { "background-color": "#f5ba46" }, "tags": { "background-color": "#eeeeee" } } }).render();
-								</script> -->
 								<h5>Race Series</h5>
 								<a href="#series">
 									<img src="img/Hville-Race-Series-Logo.png" width="130" alt="Hendersonville Race Series" />
@@ -173,19 +169,6 @@
 						<div class="team boxed-grey">
 							<div class="inner">
 								<h5>Social Networks</h5>
-								<!-- <ul class="company-social">
-									<li class="social-facebook">
-										<a href="https://www.facebook.com/groups/hendersonvillerunningclub" target="hrc">
-											<i class="fa fa-facebook"></i> Facebook
-										</a>
-									</li>
-									<li class="social-teamapp">
-										<a href="https://hendersonvillerunningclub.teamapp.com" target="hrc">
-											<img src="img/teamapp.png" alt="teamapp" /> Teamapp
-										</a>
-									</li>
-								</ul> -->
-
 								<ul class="list company-social">
 									<li class="social-item social-facebook">
 										<!-- <div class="weekly-content"> -->
@@ -251,19 +234,59 @@
 		<div class="heading-events">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
+					<div class="col-lg-10 col-lg-offset-1">
 						<div class="wow bounceInUp" data-wow-delay="0.4s">
 							<div class="section-heading">
-								<h2>Our Events</h2>
+								<h2>Local Races</h2>
 								<i class="fa fa-2x fa-angle-down"></i>
 							</div>
 						</div>
-						<div class="wow bounceInUp" data-wow-delay="0.6s">
-							<iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=91vsulqm75d67hannp6idcje3h1ona1v%40import.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
-							 style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no" target="hrc"></iframe>
-						</div>
 						<div id="calendar"></div>
-						<div id="calendar2"></div>
+						<!-- <ul class="list">
+							<li class="races-item wow bounceInUp" data-wow-delay="0.6s">
+								<div class="races-content">
+									<h4>
+										<a href="http://www.oakbarrelhalf.com" target="hrc">Oak Barrel Half Marathon</a>
+									</h4>
+									<p>
+										<i class="fa fa-clock-o" aria-hidden="true"></i> April 7, 2018 - 8:00AM
+									</p>
+									<p>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<a href="https://www.google.com/maps/place/196+Main+St,+Lynchburg,+TN+37352" target="hrc">196 Main Street, Lynchburg, TN</a>
+									</p>
+								</div>
+							</li>
+							<li class="races-item wow bounceInUp" data-wow-delay="0.6s">
+								<div class="races-content">
+									<h4>
+										<a href="https://www.runrevel.com/rmc" target="hrc">Mt Charleston</a>
+									</h4>
+									<p>
+										<i class="fa fa-clock-o" aria-hidden="true"></i> April 28, 2018 - 6:00AM
+									</p>
+									<p>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<a href="https://www.google.com/maps/place/7881+W+Tropical+Pkwy,+Las+Vegas,+NV+89149" target="hrc">7881 W Tropical Pkwy, Las Vegas, NV</a>
+									</p>
+								</div>
+							</li>
+							<li class="races-item wow bounceInUp" data-wow-delay="0.6s">
+								<div class="races-content">
+									<h4>
+										<a href="http://www.milwaukeelakefrontmarathon.org" target="hrc">Milwaukee Lakefront Marathon</a>
+									</h4>
+									<p>
+										<i class="fa fa-clock-o" aria-hidden="true"></i> October 7, 2018 - 7:30AM
+									</p>
+									<p>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<a href="https://www.google.com/maps/place/Grafton+Comprehensive+High+School/@43.3210815,-87.9419495,17z/data=!3m1!4b1!4m5!3m4!1s0x8804ef51e4a264e5:0xdae122867a95b648!8m2!3d43.321251!4d-87.9398059"
+										 target="hrc">1950 Washington St, Grafton, WI</a>
+									</p>
+								</div>
+							</li>
+						</ul> -->
 					</div>
 				</div>
 			</div>
@@ -287,25 +310,41 @@
 					<ul class="list">
 						<li class="weekly-item wow bounceInUp" data-wow-delay="0.6s">
 							<div class="weekly-content">
-								<h4>Brixx Run, Pizza & Beer</h4>
+								<h4>RunSum</h4>
 								<p>
-									<i class="fa fa-clock-o" aria-hidden="true"></i> Monday 6:00pm
+									<i class="fa fa-clock-o" aria-hidden="true"></i> Wednesday 6:30pm
 								</p>
 								<p>
-									<i class="fa fa-map-marker" aria-hidden="true"></i>
-									<a href="https://www.google.com/maps/place/Brixx+Wood+Fired+Pizza" target="hrc">Brixx Pizza</a>
+									<a href="https://www.google.com/maps/place/300+Indian+Lake+Blvd+Suite+D-220,+Hendersonville,+TN+37075/@36.3292382,-86.5942233,17z/data=!3m1!4b1!4m5!3m4!1s0x8864476f3a4f3345:0x9aaeeb1dafa848c!8m2!3d36.3292382!4d-86.5920346"
+									 target="hrc">
+										<img src="img/fleetfeetsports.png" height="30">
+									</a>
 								</p>
 							</div>
 						</li>
 						<li class="weekly-item wow bounceInUp" data-wow-delay="0.8s">
 							<div class="weekly-content">
-								<h4>Speed Work</h4>
+								<h4>Saturday AM Run</h4>
 								<p>
-									<i class="fa fa-clock-o" aria-hidden="true"></i> Wednesday 6:00pm
+									<i class="fa fa-clock-o" aria-hidden="true"></i> Saturday 6:00am
 								</p>
 								<p>
 									<i class="fa fa-map-marker" aria-hidden="true"></i>
-									<a href="https://www.google.com/maps/place/Hendersonville+High+School" target="hrc">Hendersonville High School</a>
+									<a href="https://www.google.com/maps/place/300+Indian+Lake+Blvd+Suite+D-220,+Hendersonville,+TN+37075/@36.3292382,-86.5942233,17z/data=!3m1!4b1!4m5!3m4!1s0x8864476f3a4f3345:0x9aaeeb1dafa848c!8m2!3d36.3292382!4d-86.5920346"
+									 target="hrc">Fleet Feet</a>
+								</p>
+							</div>
+						</li>
+						<li class="weekly-item wow bounceInUp" data-wow-delay="0.8s">
+							<div class="weekly-content">
+								<h4>Saturday Run</h4>
+								<p>
+									<i class="fa fa-clock-o" aria-hidden="true"></i> Saturday 7:00am
+								</p>
+								<p>
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<a href="https://www.google.com/maps/place/Hendersonville+Greenway,+Hendersonville,+TN+37075/@36.3125109,-86.609849,18z/data=!3m1!4b1!4m12!1m6!3m5!1s0x8864472a89ada8a7:0x7e4933acf4137cfd!2sDemos'+Restaurant!8m2!3d36.313138!4d-86.6072972!3m4!1s0x8864473079c8fe07:0xd5e8859c808c7d00!8m2!3d36.3125109!4d-86.608752"
+									 target="hrc">Drakes Creek near Demos</a>
 								</p>
 							</div>
 						</li>
@@ -464,44 +503,39 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/eModal/1.2.65/eModal.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.2.2/ical.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script> -->
 	<!-- Custom Theme JavaScript -->
 	<script src="js/custom.js"></script>
 	<!--<script src="contactform/contactform.js"></script>-->
 
-	<!-- <script>
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'listDay,listWeek,month'
-			},
+	<script>
+		$(document).ready(function () {
+			var displayResources = $('#calendar');
 
-			// customize the button names,
-			// otherwise they'd all just say "list"
-			views: {
-				listDay: { buttonText: 'list day' },
-				listWeek: { buttonText: 'list week' }
-			},
+			displayResources.text('Loading local races...');
 
-			defaultView: 'listWeek',
-			defaultDate: '2016-09-12',
-			navLinks: true, // can click day/week names to navigate views
-			editable: true,
-			eventLimit: true, // allow "more" link when too many events
-			events: {
-				url: 'https://hendersonvillerunningclub.teamapp.com/events_subscriptions.ics?id=2694847&secret=BAhJIj1JOGtkL0xoMm02Y3hFeVRkaTJSeFN2MFR6SDhieU83YVd6SlRFcVBzR2NQQkVjbE9Pcm9mVHhUcQY6BkVU--f9064844807da51cfcd797f275adfc12a6a25b48',
-				data: function () { // a function that returns an object
-					d: 'ical'
-				}
-			}
+			$.ajax({
+				type: "GET",
+				dataType: 'json',
+				url: "http://api.amp.active.com/v2/search/?near=37075&radius=25&query=running&current_page=1&per_page=10&sort=date_asc&category=races&start_date=2018-04-07..&exclude_children=true&api_key=gd2sf8g9a6def5ysksj8nxr9",
+				success: function (result) {
+					//console.log(result);
+					var output = "<table><thead><tr><th>Name</th><th>Provider</th><th>URL</th></thead><tbody>";
+					for (var i in result) {
+						output += "<tr><td><img src=" + result[i].imageUrlAdr + " />" + result[i].assetName + "</td><td>" + result[i].provider + "</td><td>" + result[i].url + "</td></tr>";
+					}
+					output += "</tbody></table>";
 
+					displayResources.html(output);
+					$("table").addClass("table");
+				},
+                error: function(result) {
+                    console.log(result);
+                }
+			});
 		});
-		$.get("https://hendersonvillerunningclub.teamapp.com/events_subscriptions.ics?id=2694847&secret=BAhJIj1JOGtkL0xoMm02Y3hFeVRkaTJSeFN2MFR6SDhieU83YVd6SlRFcVBzR2NQQkVjbE9Pcm9mVHhUcQY6BkVU--f9064844807da51cfcd797f275adfc12a6a25b48", function (data) {
-			$("#calendar2").html(data);
-			alert("Load was performed.");
-		});
-	</script> -->
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56250616-2"></script>
