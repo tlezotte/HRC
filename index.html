@@ -449,7 +449,7 @@
 					output += "<a href='" + data.results[i].homePageUrlAdr + "' target='hrc'>";
 					output += "<div class='media media-container'>";
 					output += "<div class='media-left media-middle'>";
-					output += "<img class='media-object' src='" + data.results[i].logoUrlAdr + "' alt=''>";
+					output += "<img class='media-object' src='" + data.results[i].logoUrlAdr.replace(/^http:/i, '') + "' alt=''>";
 					output += "</div>";
 					output += "<div class='media-body text-left'>";
 					output += "<h4 class='media-heading text-left'>" + data.results[i].assetName + "</h4>";
