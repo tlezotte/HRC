@@ -946,7 +946,8 @@ Parallax
 .races-item,
 .social-item,
 .weekly-item,
-.series-item {
+.series-item,
+.series-header-item {
   display: flex;
   padding: 0.5em;
   width: 100%;
@@ -957,6 +958,9 @@ Parallax
   .weekly-item,
   .series-item {
     width: 50%;
+  }
+  .series-header-item {
+    width: 100%;
   }
 }
 @media all and (min-width: 60em) {
@@ -969,6 +973,9 @@ Parallax
   }
   .series-item {
     width: 25%;
+  }
+  .series-header-item {
+    width: 100%;
   }
 }
 .social-content {
@@ -986,7 +993,8 @@ Parallax
   border: 1px solid #eaeaea;
 }
 .races-content,
-.series-content {
+.series-content,
+.series-header-content {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -995,6 +1003,10 @@ Parallax
   border: 1px solid #eaeaea;
   cursor: pointer;
 }
+.series-header-content h6 {
+  margin: 0 0;
+}
+
 .races-content,
 .social-content,
 .weekly-content,
