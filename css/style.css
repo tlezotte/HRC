@@ -627,6 +627,14 @@ footer p {
   font-size: 12px;
 }
 
+.design {
+  color: #fff !important;
+  font-size: 12px;
+}
+.design a {
+  color: #fff !important;
+}
+
 /* ==========================
 Parallax
 ============================= */
