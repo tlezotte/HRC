@@ -43,6 +43,8 @@
 
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!-- Wow -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- Squad theme CSS -->
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/default.css" rel="stylesheet">
@@ -312,7 +314,7 @@
 								<i class="fa fa-2x fa-angle-down"></i>
 							</div>
 						</div>
-						<div id="local-calendar"></div>
+						<div id="local-calendar" class="wow bounceInUp" data-wow-delay="0.6s"></div>
 					</div>
 				</div>
 			</div>
@@ -321,7 +323,7 @@
 	</section>
 	<!-- /Section: local -->
 
-	<!-- Section: about -->
+	<!-- Section: series -->
 	<section id="series" class="home-section text-center bg-gray">
 		<div class="container">
 			<div class="row">
@@ -386,7 +388,7 @@
 			</ul>
 		</div>
 	</section>
-	<!-- /Section: about -->
+	<!-- /Section: series -->
 
 	<footer>
 		<div class="container">
@@ -451,8 +453,13 @@
 					output += "</div>";
 					output += "<div class='media-body text-left'>";
 					output += "<h4 class='media-heading text-left'>" + data.results[i].assetName + "</h4>";
-					output += "<div><i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].activityStartDate).format("MMMM DD, YYYY") + "</div>";
-					output +=  "<div><i class='fas fa-map-marker-alt' aria-hidden='true'></i> " + data.results[i].place.placeName + " " + data.results[i].place.addressLine1Txt + " " + data.results[i].place.cityName + "</div>";
+					output += "<div><i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].activityStartDate).format("dddd, MMMM DD, YYYY") + "</div>";
+					output +=  "<div><i class='fas fa-map-marker-alt' aria-hidden='true'></i> " + data.results[i].place.placeName + " &#8226; " + data.results[i].place.addressLine1Txt + " " + data.results[i].place.cityName + ", " + data.results[i].place.stateProvinceCode +" " + data.results[i].place.postalCode + "</div>";
+					output += "<div>";
+					for (var a in data.results[i].assetAttributes) {
+						output += "<span class='label label-primary'>" + data.results[i].assetAttributes[a].attribute.attributeValue + "</span> ";
+					}
+					output += "</div>";
 					output += "</div>";
 					output += "</div>";
 					output += "</a>";
