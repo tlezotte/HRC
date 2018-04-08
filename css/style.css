@@ -914,6 +914,22 @@ Parallax
   }
 }
 
+/* local runs */
+.media-object {
+  height: 64px;
+  width: 64px;
+}
+.media {
+  margin-top: 25px !important;
+}
+.media, .media-body {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+.media, .media-container {
+  border: 1px solid #eaeaea;
+}
+
 /*Flex items*/
 .list {
   display: flex;
@@ -954,7 +970,7 @@ Parallax
   width: 100%;
 }
 .weekly-content {
-  background-color: #f9f9f9;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   padding: 1em;
