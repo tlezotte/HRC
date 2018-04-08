@@ -42,6 +42,14 @@
 
         return eModal
             .iframe(url, title);
-    }
+	}
+	
+	// -- make series into button
+	$(".series-content").on("click",function() {
+		//window.location = $(this).find("a").attr("href"); 
+		var url = $(this).find("a").attr("href"); 
+		window.open(url, 'hrc');
+		return false;
+	});
 
 })(jQuery);
