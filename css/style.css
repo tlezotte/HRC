@@ -1003,10 +1003,19 @@ Parallax
   border: 1px solid #eaeaea;
   cursor: pointer;
 }
+.races-more-content h6,
 .series-header-content h6 {
   margin: 0 0;
 }
-
+.races-more-content {
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  padding: 1em;
+  margin: 15px;
+}
 .races-content,
 .social-content,
 .weekly-content,
