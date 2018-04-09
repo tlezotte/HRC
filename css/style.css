@@ -1015,6 +1015,7 @@ Parallax
   width: 46%;
   padding: 1em;
   margin: 15px;
+  cursor: pointer;
 }
 .races-content,
 .social-content,
