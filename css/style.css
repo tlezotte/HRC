@@ -992,6 +992,7 @@ Parallax
   width: 100%;
   border: 1px solid #eaeaea;
 }
+.news-content,
 .races-content,
 .series-content,
 .series-header-content {
@@ -1003,6 +1004,7 @@ Parallax
   border: 1px solid #eaeaea;
   cursor: pointer;
 }
+.news-content h4,
 .races-more-content h6,
 .series-header-content h6 {
   margin: 0 0;
@@ -1022,4 +1024,7 @@ Parallax
 .weekly-content,
 .series-content p {
   flex: 1 0 auto;
+}
+.news-item {
+  color: #666;
 }
