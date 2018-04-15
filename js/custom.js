@@ -47,7 +47,7 @@
 	// -- make series into button
 	$(".series-content, .series-header-content, .races-more-content, .news-content").on("click",function() {
 		//window.location = $(this).find("a").attr("href"); 
-		var url = $(this).find("a").attr("href"); 
+		var url = $(this).find("a").attr("href");
 		window.open(url, 'hrc');
 		return false;
 	});
@@ -93,7 +93,7 @@
 	});
 
 	// -- news feed
-	var newsURL = 'news.json?start_date=' + now;
+	var newsURL = '/news.json?start_date=' + now;
 
 	var group_news = $('#group-news');
 
