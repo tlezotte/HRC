@@ -115,8 +115,6 @@
 				output += "</div>";
 				output += "</div>";
 				if (news_count === 3) { break; }
-			} else {
-				output = "no new news";
 			}
 		}
 		group_news.html(output);
