@@ -161,7 +161,7 @@
     var alert_level = "";
     for (var i in data.results) {
       var days_to_race = moment(data.results[i].date).diff(now, "days");
-      if (days_to_race >= 0 && days_to_race <= 14) {
+      if (days_to_race > 0 && days_to_race <= 14) {
         alert_level = ( days_to_race <= 7 ) ? "alert-danger" : "alert-warning";
         output += "<div class='alert-content " + alert_level + " text-center " + data.results[i].tags + "'>";
         // output += "<div class='alert alert-warning' role='alert'>";
