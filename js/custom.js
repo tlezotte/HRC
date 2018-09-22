@@ -54,6 +54,7 @@
 
 
 	var now = moment().format("YYYY-MM-DD");
+	var year = moment().format("YYYY");
 	
 	var proxy = 'https://cors-anywhere.herokuapp.com/';
 
@@ -124,7 +125,7 @@
   /**
    *  -- series races feed
    */
-  var seriesURL = "https://www.hendersonvilleraceseries.com/race_series.json?start_date=" + now;
+  var seriesURL = "https://www.hendersonvilleraceseries.com/"+ year + "_race_series.json?start_date=" + now;
 
   /**
    *  -- race alerts --
