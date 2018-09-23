@@ -974,6 +974,7 @@ Parallax
   .weekly-item {
     width: 33.3%;
   }
+  .results-item,
   .series-item {
     width: 25%;
   }
