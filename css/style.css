@@ -943,6 +943,7 @@ Parallax
   display: flex;
   flex-wrap: wrap;
 }
+.results-item,
 .races-item,
 .social-item,
 .weekly-item,
@@ -953,6 +954,7 @@ Parallax
   width: 100%;
 }
 @media all and (min-width: 40em) {
+  .results-item,
   .races-item,
   .social-item,
   .weekly-item,
@@ -964,6 +966,7 @@ Parallax
   }
 }
 @media all and (min-width: 60em) {
+  .results-item,
   .social-item {
     width: 50%;
   }
@@ -1025,6 +1028,36 @@ Parallax
 .series-content p {
   flex: 1 0 auto;
 }
+
+
+.results-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+}
+.results-content-none {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+.results-content h6,
+.results-content-none h6 {
+  margin: 0 !important;
+}
+.results-content h6 a,
+.results-content h6 a:hover {
+  text-decoration: none;
+  color: #888888;
+}
+#race-results {
+  margin-bottom: 0 !important;
+}
+
 .news-item {
   color: #666;
 }
