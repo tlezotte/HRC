@@ -143,7 +143,7 @@
       output += "<h5>" + data.results[i].title + "</h5>";
       output += "<p>";
       output += "<a href='" + data.results[i].url + "' target='hrs'>";
-      output += "<img src='img/" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
+      output += "<img src='" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
       output += "</a>";
       output += "</p>";
       output += "<h6>" + moment(data.results[i].date).format("MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</h6>";
@@ -220,7 +220,7 @@
         output += "</div>";
         output += "<div class='col-md-4 text-center'>";
         output += "<a href='" + alert_link + "' target='hrs'>";
-        output += "<img src='img/" + alert_image + ".png' height='35' alt='athlink'>";
+        output += "<img src='" + alert_image + "' height='35' alt='athlink'>";
         output += "</a>";
         output += "</div>";
         output += "</div>";
