@@ -185,19 +185,19 @@
       if (days_to_race >= -2 && days_to_race <= 14) {
         if (days_to_race <= 14 && days_to_race >= 8) {
           alert_level="alert-warning";
-          alert_image="athlink_register";
+          alert_image="https://www.hendersonvilleraceseries.com/img/athlink_register.png";
           alert_message="Registration Alert";
           alert_message2=days_to_race + " days till race";
           alert_link=data.results[i].register;
         } else if (days_to_race <= 7 && days_to_race >= 1) {
           alert_level="alert-danger";
-          alert_image="athlink_register";
+          alert_image="https://www.hendersonvilleraceseries.com/img/athlink_register.png";
           alert_message="Registration Alert";
           alert_message2=days_to_race + " days till race";
           alert_link=data.results[i].register;
         } else if (days_to_race <= 0) {
           alert_level="alert-success";
-          alert_image="athlink_results";
+          alert_image="https://www.hendersonvilleraceseries.com/img/athlink_results.png";
           alert_message="Did you Run?";
           alert_message2="";
           alert_link=data.results[i].results;
