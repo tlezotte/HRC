@@ -943,22 +943,16 @@ Parallax
   display: flex;
   flex-wrap: wrap;
 }
-.results-item,
-.races-item,
 .social-item,
 .weekly-item,
-.series-item,
 .series-header-item {
   display: flex;
   padding: 0.5em;
   width: 100%;
 }
 @media all and (min-width: 40em) {
-  .results-item,
-  .races-item,
   .social-item,
-  .weekly-item,
-  .series-item {
+  .weekly-item {
     width: 50%;
   }
   .series-header-item {
@@ -966,17 +960,8 @@ Parallax
   }
 }
 @media all and (min-width: 60em) {
-  .results-item,
-  .social-item {
-    width: 50%;
-  }
-  .races-item,
   .weekly-item {
     width: 33.3%;
-  }
-  .results-item,
-  .series-item {
-    width: 25%;
   }
   .series-header-item {
     width: 100%;
@@ -997,8 +982,6 @@ Parallax
   border: 1px solid #eaeaea;
 }
 .news-content,
-.races-content,
-.series-content,
 .series-header-content {
   background-color: #fff;
   display: flex;
@@ -1023,68 +1006,11 @@ Parallax
   margin: 15px;
   cursor: pointer;
 }
-.races-content,
-.social-content,
-.weekly-content,
-.series-content p {
+.social-content p,
+.weekly-content p {
   flex: 1 0 auto;
-}
-
-
-.results-content {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
-  border: 1px solid #eaeaea;
-  cursor: pointer;
-}
-.results-content-none {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
-}
-.results-content h6,
-.results-content-none h6 {
-  margin: 0 !important;
-}
-.results-content h6 a,
-.results-content h6 a:hover {
-  text-decoration: none;
-  color: #888888;
-}
-#race-results {
-  margin-bottom: 0 !important;
 }
 
 .news-item {
   color: #666;
-}
-.alert-content {
-  display: flex;
-  flex-direction: row;
-  padding: .5em;
-  width: 100%;
-  margin-top: 2.5em;
-}
-#race-alert .alert-danger a { 
-  color: #a94442;
-  text-decoration: none;
-}
-#race-alert .alert-warning a { 
-  color: #8a6d3b;
-  text-decoration: none;
-}
-.alert-content div {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.alert-left {
-  text-transform: uppercase;
-}
-#race-alert {
-  margin: -3.5em 0 2em 0;
-  border-radius: 4px;
 }
