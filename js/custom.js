@@ -2,7 +2,7 @@
 
 	new WOW().init();
 
-	jQuery(window).load(function() { 
+	jQuery(window).load(function() {
 		jQuery("#preloader").delay(50).fadeOut("slow");
 		jQuery("#load").delay(50).fadeOut("slow");
 	});
@@ -43,10 +43,10 @@
         return eModal
             .iframe(url, title);
 	}
-	
+
 	// -- make series into button
 	$(".series-content, .series-header-content, .races-more-content, .news-content").on("click",function() {
-		//window.location = $(this).find("a").attr("href"); 
+		//window.location = $(this).find("a").attr("href");
 		var url = $(this).find("a").attr("href");
 		window.open(url, 'hrc');
 		return false;
@@ -55,7 +55,7 @@
 
 	var now = moment().format("YYYY-MM-DD");
 	var year = moment().format("YYYY");
-	
+
 	var proxy = 'https://cors-anywhere.herokuapp.com/';
 
 
