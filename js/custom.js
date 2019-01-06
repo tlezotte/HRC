@@ -72,7 +72,11 @@
 	$.getJSON(finalURL, function (data) {
 		var output = "";
 		for (var i in data.results) {
-			output += "<a href='" + data.results[i].homePageUrlAdr + "' target='hrc'>";
+			if (data.results[i].homePageUrlAdr.length == 0) {
+				output += "<a href='" + data.results[i].registrationUrlAdr + "' target='hrc'>";
+			} else {
+				output += "<a href='" + data.results[i].homePageUrlAdr + "' target='hrc'>";
+			}
 			output += "<div class='media media-container'>";
 			output += "<div class='media-left media-middle'>";
 			output += "<img class='media-object' src='" + data.results[i].logoUrlAdr.replace(/^http:/i, '') + "' alt=''>";
