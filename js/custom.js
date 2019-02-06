@@ -2,10 +2,10 @@
   new WOW().init();
   var dateFormat = 'YYYY-MM-DD';
 
-  jQuery(window).load(function() {
-    jQuery('#preloader').delay(50).fadeOut('slow');
-    jQuery('#load').delay(50).fadeOut('slow');
-  });
+  // jQuery(window).load(function() {
+  //   jQuery('#preloader').delay(50).fadeOut('slow');
+  //   jQuery('#load').delay(50).fadeOut('slow');
+  // });
 
 
   // jQuery to collapse the navbar on scroll
