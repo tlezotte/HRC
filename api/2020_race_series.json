@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "title": "Memorial Day Classic",
+      "date": "2020-05-25",
+      "time": "7:00am",
+      "location": "Drakes Creek Park",
+      "url": "http://thememorialdayclassic.com/",
+      "register": "",
+      "results": "",
+      "logo": "https://www.hendersonvillerunningclub.com/img/MemorialDayClassic",
+      "tags": "5k 15k"
+    },
+    {
+      "title": "Hendersonville Half",
+      "date": "2020-09-12",
+      "time": "7:00am",
+      "location": "Fleet Feet in the Streets of Indian Lake",
+      "url": "http://hendersonvillehalf.com/",
+      "register": "",
+      "results": "",
+      "logo": "https://www.hendersonvillerunningclub.com/img/HendersonvilleHalf",
+      "tags": "half"
+    },
+    {
+      "title": "Indian Lake Loop",
+      "date": "2020-11-26",
+      "time": "8:00am",
+      "location": "Regal Streets Of Indian Lake",
+      "url": "http://indianlakeloop.com/",
+      "register": "",
+      "results": "",
+      "logo": "https://www.hendersonvillerunningclub.com/img/IndianLakeLoop",
+      "tags": "5k 5m"
+    },
+    {
+      "title": "Frostbite",
+      "date": "2021-1-2",
+      "time": "9:00am",
+      "location": "Sumner County YMCA",
+      "url": "http://www.ymcamidtn.org/events/frostbite",
+      "register": "",
+      "results": "",
+      "logo": "https://www.hendersonvillerunningclub.com/img/Frostbite",
+      "tags": "5k 10k"
+    }
+  ]
+}
