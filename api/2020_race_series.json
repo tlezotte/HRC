@@ -6,10 +6,10 @@
       "time": "7:00am",
       "location": "Drakes Creek Park",
       "url": "http://thememorialdayclassic.com/",
-      "register": "",
+      "register": "https://www.thememorialdayclassic.com/Race/Register/?raceId=87502",
       "results": "",
       "logo": "https://www.hendersonvillerunningclub.com/img/MemorialDayClassic",
-      "tags": "5k 15k"
+      "tags": "1m 5k 15k"
     },
     {
       "title": "Hendersonville Half",
@@ -17,7 +17,7 @@
       "time": "7:00am",
       "location": "Fleet Feet in the Streets of Indian Lake",
       "url": "http://hendersonvillehalf.com/",
-      "register": "",
+      "register": "https://runsignup.com/Race/TN/Hendersonville/HendersonvilleHalfMarathon2020",
       "results": "",
       "logo": "https://www.hendersonvillerunningclub.com/img/HendersonvilleHalf",
       "tags": "half"
@@ -38,11 +38,11 @@
       "date": "2021-1-2",
       "time": "9:00am",
       "location": "Sumner County YMCA",
-      "url": "http://www.ymcamidtn.org/events/frostbite",
-      "register": "",
+      "url": "https://ymcamidtn.org/programs/health-and-fitness/race-series",
+      "register": "https://www.active.com/hendersonville-tn/running/distance-running-races/frostbite-5k-10k-2021?int=72-4-A6",
       "results": "",
       "logo": "https://www.hendersonvillerunningclub.com/img/Frostbite",
-      "tags": "5k 10k"
+      "tags": "1m 5k 10k"
     }
   ]
 }
